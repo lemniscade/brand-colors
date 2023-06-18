@@ -1,6 +1,8 @@
 import React from 'react'
 import Modal from 'react-modal'
+import {GrClose} from 'react-icons/gr'
 import { useState } from 'react'
+
 
 function Sidebar() {
     const [modalIsOpen,setModalIsOpen]=useState(false)
@@ -33,7 +35,7 @@ function Sidebar() {
         className="about-modal"
         overlayClassName="about-modal-overlay"
       >
-        <button onClick={toggleModal}>close</button>
+        <button className="modal-close-btn" onClick={toggleModal}><GrClose/></button>
         <h3>About Brand Colors</h3>
         <p>BrandColors was created by DesignBombs. The goal was to create a helpful reference for the brand color codes that are needed most often.</p>
         <p>It's been featured by Smashing Magazine, CSS-Tricks, Web Design Depot, Tuts+, and over 2 million pageviews. There are now over 600 brands with 1600 colors and the collection is always growing.</p>
